@@ -238,6 +238,13 @@ body {
   font-weight: bold;
 }
 
+.full-width-iframe {
+  width: 100%;
+  min-height: 600px;
+  height: 80vh; /* 80% of the viewport height */
+  border: none;
+}
+
 .math { background: #ffcdd2; color: #c62828; }
 .science { background: #bbdefb; color: #0d47a1; }
 .history { background: #ffe0b2; color: #e65100; }
