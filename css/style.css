@@ -238,14 +238,14 @@ body {
   font-weight: bold;
 }
 
+.math { background: #ffcdd2; color: #c62828; }
+.science { background: #bbdefb; color: #0d47a1; }
+.history { background: #ffe0b2; color: #e65100; }
+.english { background: #c8e6c9; color: #2e7d32; }
+
 .full-width-iframe {
   width: 100%;
   min-height: 600px;
   height: 80vh; /* 80% of the viewport height */
   border: none;
 }
-
-.math { background: #ffcdd2; color: #c62828; }
-.science { background: #bbdefb; color: #0d47a1; }
-.history { background: #ffe0b2; color: #e65100; }
-.english { background: #c8e6c9; color: #2e7d32; }
