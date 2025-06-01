@@ -1,0 +1,244 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+
+  /* Sticky footer setup */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container for centered content with side spacing */
+.container {
+  width: 90%;
+  max-width: 800px; /* Optimal reading width */
+  margin: 0 auto;    /* Centers the container */
+  padding: 0 20px;   /* Adds side padding */
+}
+
+/* Clearfix utility for floated elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header */
+.header {
+  background: #0d47a1;
+  color: white;
+  padding: 1rem 0;
+}
+
+.logo {
+  float: left;
+  font-size: 1.5rem;
+}
+
+.nav {
+  float: right;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+/* Apply clearfix to header to contain floats */
+.header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #1e88e5, #1565c0);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.btn {
+  background: #fff;
+  color: #0d47a1;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0;
+}
+.feature-box {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #0d47a1;
+}
+.feature-box ul {
+  list-style: none;
+}
+.feature-box li a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+/* Main Content Area */
+.main-content {
+  flex: 1 0 auto;
+  padding: 2rem 0;
+}
+
+/* Footer */
+.footer {
+  background: #1565c0;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+  }
+  .nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Mobile-friendly filters */
+  .filters select,
+  .filters input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Page Header */
+.page-header {
+  background: #e3f2fd;
+  padding: 40px 0;
+  text-align: center;
+}
+.page-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.page-header p {
+  color: #555;
+}
+
+/* Filters */
+.filters {
+  padding: 20px 0;
+  text-align: right;
+}
+.filters select,
+.filters input[type="text"] {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+/* Blog Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+.blog-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.blog-card h3 {
+  font-size: 1.2rem;
+  padding: 15px 20px 5px;
+}
+.blog-card p {
+  padding: 0 20px 15px;
+  font-size: 0.95rem;
+  color: #444;
+}
+.blog-card a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+.category-tag {
+  display: inline-block;
+  margin: 0 20px 15px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.science { background: #bbdefb; color: #0d47a1; }
+.math { background: #ffcdd2; color: #c62828; }
+.history { background: #ffe0b2; color: #e65100; }
+.technology { background: #c8e6c9; color: #2e7d32; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filters {
+    text-align: left;
+  }
+}
+
+.category-tag {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.math { background: #ffcdd2; color: #c62828; }
+.science { background: #bbdefb; color: #0d47a1; }
+.history { background: #ffe0b2; color: #e65100; }
+.english { background: #c8e6c9; color: #2e7d32; }

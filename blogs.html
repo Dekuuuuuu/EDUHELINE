@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blogs - EduHeline</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">EduHeline</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-header">
+    <div class="container">
+      <h2>Latest Educational Blogs</h2>
+      <p>Explore insightful articles on various subjects and topics.</p>
+    </div>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="container">
+      <strong>Filter by Category:</strong>
+      <select id="categoryFilter">
+        <option value="all">All Categories</option>
+        <option value="science">Science</option>
+        <option value="math">Math</option>
+        <option value="history">History</option>
+        <option value="technology">Technology</option>
+      </select>
+
+      <!-- New Search Box -->
+      <br><br>
+      <strong>Search Blogs:</strong>
+      <input type="text" id="blogSearch" placeholder="Search by title..." />
+    </div>
+  </section>
+
+  <!-- Blog Posts -->
+  <section class="blog-list">
+    <div class="container">
+      <div class="blog-grid">
+
+        <!-- Blog Card 1 -->
+        <div class="blog-card" data-category="science">
+          <img src="images/Understanding Quantum Physics.jpg" alt="Blog Post 1">
+          <h3><a href="blog-details-quantam.html">Understanding Quantum Physics</a></h3>
+          <p>Learn the basics of quantum mechanics and how it shapes our understanding of the universe.</p>
+          <span class="category-tag science">Science</span>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card" data-category="math">
+          <img src="images/Top Math Tips for High Schoolers.jpg" alt="Blog Post 2">
+          <h3><a href="blog-details.html">Top Math Tips for High Schoolers</a></h3>
+          <p>Boost your math grades with these expert-recommended study strategies and tricks.</p>
+          <span class="category-tag math">Math</span>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card" data-category="history">
+          <img src="images/The Fall of the Roman Empire.jpg" alt="Blog Post 3">
+          <h3><a href="blog-details.html">The Fall of the Roman Empire</a></h3>
+          <p>Discover the key reasons behind one of history’s most famous collapses.</p>
+          <span class="category-tag history">History</span>
+        </div>
+
+        <!-- Blog Card 4 -->
+        <div class="blog-card" data-category="technology">
+          <img src="images/AI in Education Pros and Cons.jpg" alt="Blog Post 4">
+          <h3><a href="blog-details.html">AI in Education: Pros and Cons</a></h3>
+          <p>How artificial intelligence is reshaping modern classrooms and teaching methods.</p>
+          <span class="category-tag technology">Technology</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 EduHeline. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - EduHeline</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .about-section {
+      padding: 40px 0;
+    }
+
+    .about-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-image {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .about-text {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .about-text h2 {
+      margin-bottom: 15px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .mission-vision {
+      margin-top: 40px;
+    }
+
+    .boxes {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .box {
+      flex: 1;
+      background: #f1f8e9;
+      padding: 20px;
+      border-left: 5px solid #689f38;
+      border-radius: 5px;
+    }
+
+    .box h3 {
+      color: #2e7d32;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">EduHeline</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-header">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Meet the mind behind EduHeline and learn more about our educational journey.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+
+        <!-- Profile Image -->
+        <div class="about-image">
+          <img src="images/Abdullah.jpg" alt="Your Name Here">
+        </div>
+
+        <!-- Bio Text -->
+        <div class="about-text">
+          <h2>Hello! I'm [Your Name]</h2>
+          <p>I am an educator, lifelong learner, and passionate about making education accessible to all. With over 10 years of teaching experience in high school and college settings, I've seen firsthand how students struggle with complex topics — that’s why I started EduHeline.</p>
+
+          <p>This blog is my way of sharing knowledge, simplifying difficult subjects, and providing valuable resources to help learners at every stage of their educational journey.</p>
+
+          <p>Whether you're a student looking for clarity, a teacher seeking inspiration, or just curious about learning something new — welcome! You're in the right place.</p>
+        </div>
+
+      </div>
+
+      <!-- Mission & Vision -->
+      <div class="mission-vision">
+        <h2>Our Mission & Vision</h2>
+        <div class="boxes">
+          <div class="box">
+            <h3>Mission</h3>
+            <p>To provide free, high-quality educational content that empowers students, supports educators, and fosters a culture of lifelong learning.</p>
+          </div>
+          <div class="box">
+            <h3>Vision</h3>
+            <p>To become a go-to platform for educational blogs, news, and downloadable resources that simplify learning and inspire curiosity across the globe.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 EduHeline. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Facebook</a> | 
+        <a href="#">Twitter</a> | 
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
